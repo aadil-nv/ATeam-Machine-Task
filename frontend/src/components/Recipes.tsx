@@ -3,19 +3,22 @@ import { Search } from 'lucide-react';
 import RecipeCard from './RecipeCard';
 import { recipesData } from '../Data/recipe';
 
+// Note: Add this line to your HTML head or a CSS file to import the font
+// <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 const Recipes: React.FC = () => {
   return (
     <div className="flex-1 px-4 sm:px-6 lg:px-8 py-6 bg-gradient-to-br from-pink-50 to-orange-50 overflow-y-auto">
       <div className="max-w-7xl mx-auto space-y-10">
         {/* 🔍 Search + Premium Button */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col  sm:flex-row justify-between items-center gap-6">
           <div className="w-full sm:max-w-xl">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <div className="relative ">
+              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-800" size={20} />
               <input
                 type="text"
                 placeholder="Enter your search request..."
-                className="w-full pl-12 pr-4 py-3 rounded-xl bg-white shadow-sm border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-300"
+                className="w-full pl-12 pr-4 py-3 rounded-xl from-pink-50 to-orange-50 shadow-sm  focus:outline-none focus:ring-2 focus:ring-orange-300"
               />
             </div>
           </div>
@@ -43,7 +46,7 @@ const Recipes: React.FC = () => {
               🍳
             </div>
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-1">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-1 " style={{ fontFamily: "'Playfair Display',serif"}}>
                 Only the best recipes!
               </h2>
               <p className="text-gray-600 text-sm sm:text-base">Today's new recipes for you</p>
@@ -51,16 +54,24 @@ const Recipes: React.FC = () => {
           </div>
 
           {/* Right */}
-          <div className="flex gap-4 flex-wrap justify-center">
-            <div className="bg-white rounded-2xl px-6 py-3 flex items-center gap-3 shadow-sm">
-              <div className="text-2xl sm:text-3xl font-bold text-gray-800">168</div>
-              <div className="text-sm text-gray-500 font-medium">Tutorials</div>
-            </div>
-            <div className="bg-white rounded-2xl px-6 py-3 flex items-center gap-3 shadow-sm">
-              <div className="text-2xl sm:text-3xl font-bold text-gray-800">304</div>
-              <div className="text-sm text-gray-500 font-medium">Recipes</div>
-            </div>
-          </div>
+<div className="flex gap-8 flex-wrap justify-center items-center">
+  {/* Tutorials */}
+  <div className="flex flex-col items-center">
+    <div className="text-2xl sm:text-3xl font-bold text-gray-800">168</div>
+    <div className="text-sm text-gray-400 font-medium">Tutorials</div>
+  </div>
+
+  {/* Center Divider */}
+  <div className="h-10 w-px bg-gray-300"></div>
+
+  {/* Recipes */}
+  <div className="flex flex-col items-center">
+    <div className="text-2xl sm:text-3xl font-bold text-gray-800">304</div>
+    <div className="text-sm text-gray-400 font-medium">Recipes</div>
+  </div>
+</div>
+
+
         </div>
 
         {/* 🧁 Recipe Grid */}
