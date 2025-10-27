@@ -1,10 +1,18 @@
 import type { Recipe } from "../interface/types";
+import Noodle from "../assets/Noodles.jpeg"
+import TunaSalad from "../assets/salad with tuna.jpeg"
+import Pastha from "../assets/Pasth.jpeg"
+import Cucumber from "../assets/cuccumbor.jpeg"
+import Masala from "../assets/Masala tofu.jpeg"
+import Pork from "../assets/pork.jpeg"
+import Fruit from "../assets/Fruit bowl'.jpeg"
+import Grilled from "../assets/Grilled salmon.jpeg"
 
 export const recipesData: Recipe[] = [
   {
     id: '1',
     name: 'Noodle chicken soup',
-    image: '🍜',
+    image: Noodle,
     difficulty: 'Intermediate',
     time: 25,
     calories: 95,
@@ -14,7 +22,7 @@ export const recipesData: Recipe[] = [
   {
     id: '2',
     name: 'Salad with raw tuna',
-    image: '🥗',
+    image: TunaSalad,
     difficulty: 'Advanced',
     time: 25,
     calories: 95,
@@ -24,7 +32,7 @@ export const recipesData: Recipe[] = [
   {
     id: '3',
     name: 'Pasta with spinach',
-    image: '🍝',
+    image: Pastha,
     difficulty: 'Beginner',
     time: 25,
     calories: 95,
@@ -34,7 +42,7 @@ export const recipesData: Recipe[] = [
   {
     id: '4',
     name: 'Cucumber salad',
-    image: '🥒',
+    image: Cucumber,
     difficulty: 'Advanced',
     time: 25,
     calories: 95,
@@ -44,7 +52,7 @@ export const recipesData: Recipe[] = [
   {
     id: '5',
     name: 'Masala tofu',
-    image: '🍛',
+    image: Masala,
     difficulty: 'Beginner',
     time: 25,
     calories: 95,
@@ -54,7 +62,7 @@ export const recipesData: Recipe[] = [
   {
     id: '6',
     name: 'Pork medallions',
-    image: '🥩',
+    image: Pork,
     difficulty: 'Advanced',
     time: 25,
     calories: 95,
@@ -64,7 +72,7 @@ export const recipesData: Recipe[] = [
   {
     id: '7',
     name: 'Fruit bowl',
-    image: '🍓',
+    image: Fruit,
     difficulty: 'Intermediate',
     time: 25,
     calories: 95,
@@ -74,7 +82,7 @@ export const recipesData: Recipe[] = [
   {
     id: '8',
     name: 'Grilled salmon',
-    image: '🐟',
+    image: Grilled,
     difficulty: 'Intermediate',
     time: 30,
     calories: 120,
