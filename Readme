@@ -1,0 +1,60 @@
+🍳 ATeam Machine Task — Frontend
+
+LiveDemo :https://a-team-machine-task.vercel.app/
+
+This is the frontend of the ATeam Machine Task project, developed by Muhammed Aadil NV.
+It showcases a modern recipe dashboard built using React, TypeScript, Tailwind CSS, and Framer Motion, focusing on smooth UI animations, responsiveness, and clean architecture.
+
+🧩 Tech Stack
+Category	Technologies Used
+Frontend Framework	React + TypeScript
+Styling	Tailwind CSS
+Animations	Framer Motion
+Icons	Lucide React
+State Management	React Hooks
+
+src/
+├── components/          # Reusable UI components (cards, badges, etc.)
+├── pages/               # Page-level components
+├── utils/               # Helper functions (e.g. getDietTypeIcon)
+├── assets/              # Images and icons
+├── interface/           # TypeScript interfaces
+├── App.tsx              # Root app component
+└── main.tsx             # App entry point
+
+
+⚙️ Installation & Setup
+
+1.Clone the repository
+
+git clone https://github.com/aadil-nv/ATeam-Machine-Task.git
+
+
+2.Navigate into the frontend directory
+
+cd frontend
+
+
+3.Install dependencies
+
+npm install
+
+4.Start the development server
+
+npm run dev
+
+
+🧠 Features
+
+✅ Clean and responsive UI
+✅ Interactive recipe cards with flipping animation
+✅ Dynamic difficulty badges and ratings
+✅ Smooth hover transitions using Framer Motion
+✅ Themed components using Tailwind gradients
+✅ Modular and reusable component design
+
+
+🧑‍💻 Developer
+
+Muhammed Aadil NV
+📧 adilev2000@gmail.com
