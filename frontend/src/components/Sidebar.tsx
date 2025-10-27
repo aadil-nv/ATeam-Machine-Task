@@ -10,25 +10,20 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
     { id: 'community', icon: Users, label: 'Community' }
   ];
 
-  // Calculate completion percentage (you can adjust this based on your logic)
   const completionPercentage = 75;
-  const circumference = 2 * Math.PI * 36; // radius of 36
+  const circumference = 2 * Math.PI * 36; 
   const strokeDashoffset = circumference - (completionPercentage / 100) * circumference;
 
   return (
     <div className="w-64 bg-white h-screen p-6 flex flex-col">
-      {/* Centered Logo */}
       <div className="mb-8 flex justify-center">
-        <h1 className="text-2xl font-bold text-gray-800">Foodgo</h1>
+        <h1 className="text-2xl font-bold text-gray-800">Foodoo</h1>
       </div>
       
-      {/* User Profile with Completion Circle */}
       <div className="mb-8">
         <div className="flex flex-col items-center">
           <div className="relative w-24 h-24 mb-3">
-            {/* Completion Circle */}
             <svg className="w-24 h-24 transform -rotate-90" viewBox="0 0 80 80">
-              {/* Background circle */}
               <circle
                 cx="40"
                 cy="40"
@@ -37,7 +32,6 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
                 strokeWidth="4"
                 fill="none"
               />
-              {/* Progress circle */}
               <circle
                 cx="40"
                 cy="40"
@@ -59,11 +53,17 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
             </svg>
             
             {/* Avatar inside circle */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-pink-400 flex items-center justify-center text-2xl ring-4 ring-white">
-                {userProfile.avatar}
-              </div>
-            </div>
+           <div className="absolute inset-0 flex items-center justify-center">
+  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-pink-400 
+                  flex items-center justify-center ring-4 ring-white overflow-hidden shadow-md">
+    <img
+      src={userProfile.avatar}
+      alt="User Avatar"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
           </div>
           
           <h3 className="font-semibold text-gray-800">{userProfile.name}</h3>
@@ -75,7 +75,6 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
         </div>
       </div>
       
-      {/* Navigation with Framer Motion */}
 <nav className="flex-1">
   {menuItems.map((item) => {
     const Icon = item.icon;
@@ -91,7 +90,6 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
-        {/* Icon in red color */}
         <Icon
           size={20}
           className={`${
@@ -99,7 +97,6 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
           } transition-colors duration-200`}
         />
 
-        {/* Label */}
         <motion.span
           className="font-medium"
           whileHover={{ letterSpacing: "0.025em" }}
