@@ -2,6 +2,7 @@ import React from 'react';
 import { Search, Settings2 } from 'lucide-react';
 import RecipeCard from './RecipeCard';
 import { recipesData } from '../Data/recipe';
+import CookingMen from "../assets/plates.png"
 
 
 
@@ -36,9 +37,14 @@ const Recipes: React.FC = () => {
 
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div className="flex items-center gap-4 text-center sm:text-left">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-teal-400 to-green-400 flex items-center justify-center text-3xl sm:text-4xl">
-                            🍳
-                        </div>
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden ring-4 ring-white shadow-md">
+  <img
+    src={CookingMen}
+    alt="Cooking Icon"
+    className="w-full h-full object-cover"
+  />
+</div>
+
                         <div>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-1 " style={{ fontFamily: "'Playfair Display',serif" }}>
                                 Only the best recipes!
