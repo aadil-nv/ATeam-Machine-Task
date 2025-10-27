@@ -112,19 +112,36 @@ const Sidebar: React.FC<{ activeTab: string; onTabChange: (tab: string) => void 
 
       
       {/* Team Section */}
-      <div className="mt-auto bg-gradient-to-br bg-white rounded-xl p-4">
-        <div className="flex gap-2 mb-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-pink-400"></div>
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 -ml-3"></div>
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-teal-400 -ml-3 flex items-center justify-center text-white text-xs font-bold">
-            +
-          </div>
-        </div>
-        <p className="text-sm font-semibold text-gray-800 mb-1">Create a team and</p>
-        <p className="text-sm text-gray-700">
-          take part in <span className="font-bold underline cursor-pointer">TV show!</span>
-        </p>
-      </div>
+  <div className="mt-auto bg-gradient-to-br bg-white rounded-xl p-4 flex flex-col items-center text-center">
+  <div className="flex gap-2 mb-2 items-center justify-center">
+    <div className="w-6 h-6 rounded-full border-2 border-white overflow-hidden">
+      <img
+        src="https://randomuser.me/api/portraits/men/32.jpg"
+        alt="User 1"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="w-10 h-10 rounded-full -ml-3 border-2 border-white overflow-hidden">
+      <img
+        src="https://randomuser.me/api/portraits/women/68.jpg"
+        alt="User 2"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="w-6 h-6 rounded-full bg-red-500  -ml-3 flex items-center justify-center text-white text-xs font-bold cursor-pointer hover:opacity-80">
+      +
+    </div>
+  </div>
+
+  <p className="text-sm font-semibold text-gray-800 mb-1">Create a team and</p>
+  <p className="text-sm text-gray-700">
+    take part in <span className="font-bold underline cursor-pointer">TV show!</span>
+  </p>
+</div>
+
+
     </div>
   );
 };

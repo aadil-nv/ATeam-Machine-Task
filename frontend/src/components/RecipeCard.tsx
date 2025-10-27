@@ -39,7 +39,7 @@ const RecipeCard: React.FC<{ recipe: Recipe }> = ({ recipe }) => {
           {/* Floating Recipe Image */}
           <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
             <div
-              className="w-24 h-24 rounded-full bg-gradient-to-br from-orange-100 to-orange-200 
+              className="w-28 h-28 rounded-full bg-gradient-to-br from-orange-100 to-orange-200 
                   flex items-center justify-center shadow-lg border-4 border-white overflow-hidden"
             >
               <img

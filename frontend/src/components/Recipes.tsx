@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search } from 'lucide-react';
+import { Search, Settings2 } from 'lucide-react';
 import RecipeCard from './RecipeCard';
 import { recipesData } from '../Data/recipe';
 
@@ -22,18 +22,16 @@ const Recipes: React.FC = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <button className="p-2 hover:bg-white rounded-lg transition-colors border border-gray-200">
-                            <div className="w-6 h-6 grid grid-cols-2 gap-1">
-                                <div className="bg-red-800 rounded-sm"></div>
-                                <div className="bg-gray-800 rounded-sm"></div>
-                                <div className="bg-gray-800 rounded-sm"></div>
-                                <div className="bg-gray-800 rounded-sm"></div>
-                            </div>
-                        </button>
-                        <button className="px-5 py-3 bg-red-500 text-white rounded-xl font-semibold hover:bg-red-600 transition-colors">
-                            Go to Premium
-                        </button>
-                    </div>
+  <button className="p-2 hover:bg-white rounded-lg transition-colors flex items-center justify-center group">
+    <Settings2
+      className="w-5 h-5 text-gray-900 transition-transform duration-300 transform group-hover:rotate-90"
+    />
+  </button>
+
+  <button className="px-5 py-3 bg-red-500 text-white rounded-xl font-semibold hover:bg-red-600 transition-colors">
+    Go to Premium
+  </button>
+</div>
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
